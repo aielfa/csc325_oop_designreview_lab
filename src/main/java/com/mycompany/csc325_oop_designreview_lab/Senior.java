@@ -11,7 +11,7 @@ public class Senior extends Student{
             throw new IllegalArgumentException("Senior students require a minimum of 85 credits.");
         }
     }
-
+    //tostring class
     @Override
     public String toString() {
         return "Senior{ " + super.toString() + " }";

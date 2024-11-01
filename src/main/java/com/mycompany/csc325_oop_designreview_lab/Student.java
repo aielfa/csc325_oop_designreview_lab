@@ -31,18 +31,20 @@ public class Student extends Human {
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
-    @Override
-    public String getAddress() {
-        return this.getAddress();
-    }
-
-    @Override
-    public void setAddress(String address) {
-        this.setAddress(address);
-    }
+    //tostring
     @Override
     public String toString() {
         return "Student{name='" + getName() + "', age=" + getAge() + ", credits=" + credits + ", gpa=" + gpa + "}";
     }
-	// ToDo 4: Add comments to your code
+    // Had to implement from superclass Human
+    @Override
+    public String getAddress() {
+        return "";
+    }
+
+    @Override
+    public void setAddress(String address) {
+
+    }
+    // ToDo 4: Add comments to your code
 }
